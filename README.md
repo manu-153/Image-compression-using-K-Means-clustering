@@ -1,4 +1,4 @@
-# Image Compression Using K-Means Clustering
+# Image Compression Using  Clustering
 
 ## Overview
 This project demonstrates image compression using the K-Means clustering algorithm. By reducing the number of colors in an image, we can efficiently compress images while retaining visual quality. The approach involves clustering pixel colors in the RGB space and replacing each pixel with its nearest centroid.
