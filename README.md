@@ -1,22 +1,4 @@
-# Image Compression Using K-Means Clustering
 
-## Overview
-This project demonstrates image compression using the K-Means clustering algorithm. By reducing the number of colors in an image, we can efficiently compress images while retaining visual quality. The approach involves clustering pixel colors in the RGB space and replacing each pixel with its nearest centroid.
-
-## How It Works
-1. **Load the Image**: The original image is loaded and visualized.
-2. **Preprocess the Data**: The image is reshaped into a 2D array where each row represents a pixel with its RGB values.
-3. **K-Means Clustering**:
-   - Initialize centroids randomly from the dataset.
-   - Assign each pixel to the closest centroid.
-   - Compute new centroids based on the mean of assigned pixels.
-   - Repeat the process for a fixed number of iterations.
-4. **Reconstruct the Image**: Each pixel is replaced with its corresponding centroid color, and the image is reshaped back to its original dimensions.
-5. **Save and Display**: The compressed image is displayed and saved.
-
-## Features
-- Supports compression for multiple images.
-- Customizable number of colors (K) for compression.
 - Displays and saves compressed images.
 - Efficient clustering using vectorized operations.
 
