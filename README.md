@@ -1,24 +1,30 @@
 # Image Compression Using K-Means Clustering
 
 ## Overview
-This project demonstrates image compression using the K-Means clustering algorithm. By reducing the number of colors in an image, we can efficiently compress images while retaining visual quality. The approach involves clustering pixel colors in the RGB space and replacing each pixel with its nearest centroid.
 
-## How It Works
-1. **Load the Image**: The original image is loaded and visualized.
-2. **Preprocess the Data**: The image is reshaped into a 2D array where each row represents a pixel with its RGB values.
-3. **K-Means Clustering**:
-   - Initialize centroids randomly from the dataset.
-   - Assign each pixel to the closest centroid.
-   - Compute new centroids based on the mean of assigned pixels.
-   - Repeat the process for a fixed number of iterations.
-4. **Reconstruct the Image**: Each pixel is replaced with its corresponding centroid color, and the image is reshaped back to its original dimensions.
-5. **Save and Display**: The compressed image is displayed and saved.
+This project focuses on image compression through the **K-Means clustering algorithm**. The method works by reducing the total number of colors in an image, which allows for efficient compression while preserving overall visual quality. It achieves this by grouping similar pixel colors in RGB space and replacing them with their nearest cluster centers.
 
-## Features
-- Supports compression for multiple images.
-- Customizable number of colors (K) for compression.
-- Displays and saves compressed images.
-- Efficient clustering using vectorized operations.
+## Process
+
+1. **Load the Image**: Import and visualize the original image.
+2. **Data Preparation**: Convert the image into a 2D matrix where each row corresponds to a pixel represented by its RGB values.
+3. **Apply K-Means Clustering**:
+
+   * Randomly select initial centroids from the dataset.
+   * Assign each pixel to the closest centroid.
+   * Update centroids by averaging the pixels in each cluster.
+   * Repeat until the set number of iterations is reached.
+4. **Rebuild the Image**: Replace each pixel with the color of its assigned centroid and reshape the data back to the original image size.
+5. **Output**: Display and save the final compressed image.
+
+## Key Features
+
+* Handles compression of multiple images.
+* Allows customization of the number of colors (K).
+* Provides both visualization and storage of compressed results.
+* Implements clustering efficiently using vectorized computations.
+
+---
 
 ## Requirements
 - Python 3.x
